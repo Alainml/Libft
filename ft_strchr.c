@@ -6,7 +6,7 @@
 /*   By: almirand <almirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 15:32:20 by almirand          #+#    #+#             */
-/*   Updated: 2022/04/04 10:42:38 by almirand         ###   ########.fr       */
+/*   Updated: 2022/04/10 16:50:21 by almirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,3 @@ char	*ft_strchr(const char *s, int c)
 		return (&s2[index]);
 	return (NULL);
 }
-
-/* int	main(void)
-{
-	const char	s[20] = "hola";
-	char c = 'p';
-	printf("%s - ", ft_strchr(s, c + 256));
-	printf("%s", strchr(s, c + 256));
-} */

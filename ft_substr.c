@@ -6,7 +6,7 @@
 /*   By: almirand <almirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 09:32:42 by almirand          #+#    #+#             */
-/*   Updated: 2022/04/08 14:41:47 by almirand         ###   ########.fr       */
+/*   Updated: 2022/04/10 16:50:56 by almirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ft_strlcpy(substr, &s[start], len + 1);
 	return (substr);
 }
-
-/* int	main(void)
-{
-	printf("%s", ft_substr("tripouille", 100, 1));
-} */

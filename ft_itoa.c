@@ -6,7 +6,7 @@
 /*   By: almirand <almirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 19:22:56 by almirand          #+#    #+#             */
-/*   Updated: 2022/04/06 11:49:11 by almirand         ###   ########.fr       */
+/*   Updated: 2022/04/10 16:49:37 by almirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,8 +73,3 @@ char	*ft_itoa(int n)
 		itoa[numsize] = n + '0';
 	return (itoa);
 }
-
-/* int	main(void)
-{
-	printf("%s", ft_itoa(2147483647));
-} */

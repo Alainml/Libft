@@ -6,7 +6,7 @@
 /*   By: almirand <almirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 09:49:13 by almirand          #+#    #+#             */
-/*   Updated: 2022/03/31 10:23:25 by almirand         ###   ########.fr       */
+/*   Updated: 2022/04/10 16:50:03 by almirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,3 @@ void	*ft_memcpy(void	*dst, const void	*src, size_t n)
 	}
 	return (NULL);
 }
-
-/*int main(void)
-{
-	char	dst[10] = "hola";
-	char	src[10] = "adios";
-	size_t	n = 6;
-	printf("%s\n", ft_memcpy(dst, src, 20));
-	printf("%s", memcpy(dst, src, 2));
-}*/

@@ -6,7 +6,7 @@
 /*   By: almirand <almirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 10:37:37 by almirand          #+#    #+#             */
-/*   Updated: 2022/04/01 10:40:06 by almirand         ###   ########.fr       */
+/*   Updated: 2022/04/10 16:50:32 by almirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,15 +42,3 @@ size_t	ft_strlcpy(char	*dst, const char	*src, size_t dstsize)
 	i = ft_strlen(src);
 	return (i);
 }
-
-/*int main(void)
-{
-	char	dst[10] = "desti";
-	char	dst2[10] = "desti";
-	const char	src[10] = "source";
-	const char	src2[10] = "source";
-	printf("%lu ",strlcpy(dst, src, 4));
-	printf("%s\n", dst);
-	printf("%zu ", ft_strlcpy(dst2, src2, 4));
-	printf("%s", dst2);
-}*/

@@ -6,7 +6,7 @@
 /*   By: almirand <almirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 12:58:31 by almirand          #+#    #+#             */
-/*   Updated: 2022/04/08 15:25:06 by almirand         ###   ########.fr       */
+/*   Updated: 2022/04/10 16:49:12 by almirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,10 +45,3 @@ int	ft_atoi(const char *str)
 	}
 	return (num * minus);
 }
-
-/* int	main(void)
-{
-	const char	str[15] = "-2147483648";
-	printf("%d\n", ft_atoi(str));
-	printf("%d", atoi(str));
-} */

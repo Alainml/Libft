@@ -6,7 +6,7 @@
 /*   By: almirand <almirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 16:30:00 by almirand          #+#    #+#             */
-/*   Updated: 2022/04/08 15:13:04 by almirand         ###   ########.fr       */
+/*   Updated: 2022/04/10 16:50:16 by almirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,13 +90,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (ft_build_split(s, c));
 }
-
-/* int	main(void)
-{
-	char	**str;
-	int		i;
-
-	i = 0;
-	str = ft_split("\0", ' ');
-	printf("%s", str[0]);
-} */

@@ -6,7 +6,7 @@
 /*   By: almirand <almirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 11:43:45 by almirand          #+#    #+#             */
-/*   Updated: 2022/03/31 10:23:19 by almirand         ###   ########.fr       */
+/*   Updated: 2022/04/10 16:49:59 by almirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-/*
-int main(void)
-{
-	const char	*s1 = "hola";
-	const char	*s2 = "hola";
-	size_t		n = 4;
-	printf("%d\n", ft_memcmp(s1, s2, n));
-	printf("%d", memcmp(s1, s2, n));
-}*/

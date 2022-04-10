@@ -6,7 +6,7 @@
 #    By: almirand <almirand@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/31 11:04:00 by almirand          #+#    #+#              #
-#    Updated: 2022/04/08 13:49:48 by almirand         ###   ########.fr        #
+#    Updated: 2022/04/10 15:59:21 by almirand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,8 +21,8 @@ SRC = ft_calloc.c	ft_isdigit.c	ft_memcpy.c		ft_strlcat.c	ft_strnstr.c	ft_isalnum
 	ft_strjoin.c	ft_strtrim.c	ft_split.c		ft_strmapi.c	ft_striteri.c	ft_putchar_fd.c \
 	ft_putstr_fd.c	ft_putendl_fd.c	ft_itoa.c		ft_putnbr_fd.c \
 
-SRC_BONUS = ft_lstnew.c	ft_lstadd_front.c	ft_lstsize.c	ft_lstlast.c	ft_lstadd_back.c	ft_lstdelone.c \
-			ft_lstclear.c	ft_lstiter.c	ft_lstmap.c \
+SRC_BONUS = ft_lstnew_bonus.c	ft_lstadd_front_bonus.c	ft_lstsize_bonus.c	ft_lstlast_bonus.c	ft_lstadd_back_bonus.c	ft_lstdelone_bonus.c \
+			ft_lstclear_bonus.c	ft_lstiter_bonus.c	ft_lstmap_bonus.c \
 
 OBJ = $(SRC:.c=.o)
 
@@ -30,33 +30,25 @@ OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 CC = gcc
 
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror -I.
 
-.PHONY: all clean fclean re
-
-all: mandatory bonus
-
-mandatory: $(NAME)
-
-$(NAME):	$(OBJ)
-		@echo "Building libft.a mandatory"
-		ar -crs $@ $^
-
-bonus: $(BONUS_NAME)
-
-$(BONUS_NAME):	$(OBJ_BONUS)
-		@echo "Making bonus"
-		ar -crs $(NAME) $^
+all: $(NAME)
 
 %.o:	%.c
 		$(CC) -c $(FLAGS) $^
 
+$(NAME):	$(OBJ)
+		ar -crs $@ $^
+
+bonus: $(OBJ) $(OBJ_BONUS)
+	ar -crs $(NAME) $^
+
 clean:
-		@echo "Cleaning .objs"
 		@rm -f $(OBJ) $(OBJ_BONUS)
 
 fclean:	clean
-		@echo "Cleaning libft.a"
 		@rm -f $(NAME)
 
 re:	fclean all
+
+.PHONY: all clean fclean re bonus

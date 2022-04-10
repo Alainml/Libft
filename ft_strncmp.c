@@ -6,7 +6,7 @@
 /*   By: almirand <almirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 17:04:07 by almirand          #+#    #+#             */
-/*   Updated: 2022/03/31 12:51:33 by almirand         ###   ########.fr       */
+/*   Updated: 2022/04/10 16:50:40 by almirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,12 +40,3 @@ int	ft_strncmp(const char	*s1, const char	*s2, size_t n)
 	}
 	return (0);
 }
-
-/* int	main(void)
-{
-	char	str1[10] = "pr6ueba";
-	char	str2[10] = "pr2ueba";
-	int		n = 10;
-
-	printf("%d", ft_strncmp(str1, str2, n));
-} */

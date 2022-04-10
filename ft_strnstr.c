@@ -6,7 +6,7 @@
 /*   By: almirand <almirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 12:11:16 by almirand          #+#    #+#             */
-/*   Updated: 2022/03/31 13:29:32 by almirand         ###   ########.fr       */
+/*   Updated: 2022/04/10 16:50:43 by almirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,13 +44,3 @@ char	*ft_strnstr(const char	*haystack, const char	*needle, size_t n)
 	}
 	return (0);
 }
-
-/*
-int main(void)
-{
-	char str[] = "0: cero";
-	char tofind[] ="c";
-	size_t n = 0;
-	printf("%s\n", ft_strnstr(str, tofind, n));
-	printf("%s", strnstr(str, tofind, n));
-}*/

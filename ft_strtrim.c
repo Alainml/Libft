@@ -6,7 +6,7 @@
 /*   By: almirand <almirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 11:40:37 by almirand          #+#    #+#             */
-/*   Updated: 2022/04/08 14:43:24 by almirand         ###   ########.fr       */
+/*   Updated: 2022/04/10 16:50:51 by almirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,11 +91,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	s[0] = '\0';
 	return (s);
 }
-
-/* int	main(void)
-{
-	char const	*s = "lorem ipsum dolor sit amet";
-	char const	*set = "telo";
-
-	printf("%s", ft_strtrim(s, set));
-} */
